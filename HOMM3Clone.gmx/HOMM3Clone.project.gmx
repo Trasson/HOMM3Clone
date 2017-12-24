@@ -5,9 +5,44 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="MapTileSprites">
+      <sprite>sprites\BlankTile</sprite>
+      <sprite>sprites\RedHighlightSprite</sprite>
+      <sprite>sprites\YellowHighlightSprite</sprite>
+      <sprite>sprites\BlueHighlightSprite</sprite>
+      <sprite>sprites\GrassTileSprite</sprite>
+      <sprite>sprites\WaterTileSprite</sprite>
+    </sprites>
+    <sprite>sprites\TerraSprite</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\mapCreation.gml</script>
+    <scripts name="MapScripts">
+      <script>scripts\TestMap.gml</script>
+    </scripts>
+    <script>scripts\HeroInitialization.gml</script>
+    <script>scripts\HeroClick.gml</script>
+  </scripts>
+  <objects name="objects">
+    <objects name="MapTileObjects">
+      <object>objects\MapTile</object>
+      <object>objects\Highlight</object>
+      <object>objects\GrassTile</object>
+      <object>objects\WaterTile</object>
+      <object>objects\RedHighlight</object>
+      <object>objects\BlueHighlight</object>
+      <object>objects\YellowHighlight</object>
+    </objects>
+    <object>objects\MapController</object>
+    <object>objects\HeroMaster</object>
+    <object>objects\Terra</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\MapScreen</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
